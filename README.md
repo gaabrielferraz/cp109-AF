@@ -1,5 +1,7 @@
 # cp109af
 
+### Preview Layout Project 
+![Layout project](public/layout.png)
 ## Project setup
 ```
 npm install
