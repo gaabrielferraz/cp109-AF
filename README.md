@@ -1,7 +1,14 @@
 # cp109af
 
 ### Preview Layout Project 
-![Layout project](public/layout.png)
+![Layout Project](public/layout1.png)
+
+![Layout Episodes](public/layout2.png)
+
+![Layout Photos](public/layout3.png)
+
+![Layout Contato](public/layout4.png)
+
 ## Project setup
 ```
 npm install
