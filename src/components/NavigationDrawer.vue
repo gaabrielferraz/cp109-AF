@@ -3,7 +3,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h5">
-            Weathering With You
+            {{animeName}}
           </v-list-item-title>
           <v-list-item-subtitle>
           </v-list-item-subtitle>
@@ -31,19 +31,21 @@
     </v-navigation-drawer>
 </template>
 
-
 <script>
   export default {
     data () {
       return {
         items: [
-          { title: 'Episodes', icon: 'mdi-home ', route: '/home' },
+          { title: 'Anime', icon: 'mdi-home ', route: '/home' },
           { title: 'Episodes', icon: 'mdi-view-dashboard', route: '/anime-episodes' },
           { title: 'Photos', icon: 'mdi-image',route: '/photos' },
           { title: 'Contato', icon: 'mdi-calendar-account',route: '/contato' },
         ],
         right: null,
       }
-    },
-  }
+    }, computed: {
+      animeName() {
+        return this.$store.getters.getAnimeName
+      }
+    }}
 </script>

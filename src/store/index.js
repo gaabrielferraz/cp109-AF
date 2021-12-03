@@ -40,9 +40,11 @@ export default new Vuex.Store({
             id:8,
             img: "./thumbs/8.jpg",
         }
-      ]
+      ],
+      animeName: "Weathering With You"
   },
   mutations: {
+    
   },
   actions: {
   },
@@ -52,5 +54,8 @@ export default new Vuex.Store({
     getEpisodes(state) {
       return state.episodios;
     },
+    getAnimeName(state) {
+      return state.animeName;
+    }
   }
 })

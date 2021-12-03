@@ -42,7 +42,7 @@
     data () {
       return {
         items: [
-          { title: 'Episodes', icon: 'mdi-home ', route: '/home' },
+          { title: 'Anime', icon: 'mdi-home ', route: '/home' },
           { title: 'Episodes', icon: 'mdi-view-dashboard', route: '/anime-episodes' },
           { title: 'Photos', icon: 'mdi-image',route: '/photos' },
           { title: 'Contato', icon: 'mdi-calendar-account',route: '/contato' },
