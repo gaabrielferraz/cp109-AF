@@ -16,12 +16,11 @@ export default new Vuex.Store({
   actions: {
     fetchEpisodes() {
       fetch('./data/epList.json')
-        .then((res) => {       
+        .then((res) => {   
           return res.json();
         })
         .then((data) => {
           const payload = data.episodes;
-          console.log(JSON.stringify(data));
           this.commit('SET_EPISODES',payload);
         })
     }
