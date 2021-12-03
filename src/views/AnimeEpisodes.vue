@@ -25,5 +25,9 @@ export default {
       episodes() {
         return this.$store.getters.getEpisodes
       }
-    }}
+    },created(){
+    if(this.$store.getters.getEpisodes === null)
+      this.$store.dispatch("fetchEpisodes");
+  }
+}
 </script>
